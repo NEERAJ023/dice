@@ -7,11 +7,10 @@ const RollDice = ({resetscore,roledice,current}) => {
   return (
     <DiceContainer>
         <div className='dice'>
-        <img 
+        <div className='random'
         onClick={roledice}
-        src={`/images/Dice/dice_${current}.png`}
-        alt="pic">
-        </img>
+        alt="pic">{current}
+        </div>
         </div>
         <p>Click on Dice to roll</p>
         <button onClick={resetscore}>Reset</button>
@@ -31,11 +30,19 @@ p{
 }
 .dice{
     cursor: pointer;
+    border: 1px solid black;
+    width:140px;
+    text-align:center
 }
 button{
     width:140px;
      height:50px;
      border-radius:10px;
+}
+.random{
+    font-size:100px;
+    
+    
 }
 `
 

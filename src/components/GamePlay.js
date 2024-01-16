@@ -25,7 +25,9 @@ const GamePlay = () => {
         return ;
      }
       let randomnum=genraterandomnum(1,7)
-         setimg((prev)=>randomnum)
+      console.log(randomnum)
+         setimg(randomnum)
+         
          if(randomnum===item){
             setscore((prv)=>prv+randomnum)
          }else{

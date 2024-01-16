@@ -6,6 +6,7 @@ const Totalscore = ({score}) => {
     <Scoreboard>
         <h1>{score}</h1>
         <p>Total score</p>
+        <p className='c'>Score is according to your choosen number</p>
     </Scoreboard>
   )
 }
@@ -19,6 +20,9 @@ text-align:center;
    p{
     font-size:24px;
     font-weight:500px;
+   }
+   .c{
+    color:greenyellow;
    }
 `
 
